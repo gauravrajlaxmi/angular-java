@@ -9,10 +9,10 @@ spec:
   source:
     repoURL: https://github.com/gauravrajlaxmi/angular-java.git
     targetRevision: develop
-    path: /angular-java/helm/backend/
+    path: helm/backend   # ✅ IMPORTANT FIX
     helm:
       valueFiles:
-        - values.yml
+        - values.yaml
 
   destination:
     server: https://kubernetes.default.svc
